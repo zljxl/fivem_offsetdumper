@@ -1,12 +1,108 @@
-# ImGui-DirectX-11-Kiero-Hook
-Universal ImGui implementation through DirectX 11 Hook (kiero)
-<h1>Setting up the solution</h1>
-<ul>
-  <li>Download and install <a href="https://www.microsoft.com/en-us/download/details.aspx?id=6812">DirectX SDK</a></li>
-  <li>Open the solution on Visual Studio and open the project Properties</li>
-  <li>Go to VC++ Directories -> Include Directories. Click on 'Edit' and select the Include folder <br/>located on your DirectX SDK installation path. It is generally this one: <br/>%programfiles(x86)%\Microsoft DirectX SDK (June 2010)\Include\
-  <li>Now go to VC++ Directories -> Library Directories. Click on 'Edit' and select the library folder <br/> located on your DirectX SDK installation path. It is generally this one - choose x86 for 32bit and x64 for 64bit: <br/>%programfiles(x86)%\Microsoft DirectX SDK (June 2010)\Lib\</li>
-  <li><b>Done!</b></li>
-</ul>
-<h2>Kiero</h2>
-<p>You can find Kiero's official repository <a href="https://github.com/Rebzzel/kiero">here</a>
+# 🎮 FiveM Offset Dumper
+
+Ferramenta para **extração automática de offsets atualizados do FiveM**.
+
+Desenvolvido por **Pedro Guarconi** e colaborador.
+
+---
+
+## 📖 Visão geral
+
+O FiveM Offset Dumper automatiza a obtenção de offsets utilizados pelo FiveM, eliminando a necessidade de análise manual a cada atualização.
+
+A ferramenta analisa o processo em execução e gera uma lista organizada de offsets prontos para uso.
+
+---
+
+## ✨ Recursos
+
+- Dump automático de offsets
+- Compatível com atualizações recentes do FiveM
+- Estrutura de saída limpa e organizada
+- Execução rápida e leve
+- Fácil integração com outros projetos
+
+---
+
+## 🧱 Tecnologias
+
+- **C++**
+- **Windows API**
+- Técnicas de análise de memória
+
+---
+
+## 📦 Dependências
+
+O projeto utiliza:
+
+- **MinHook** — API hooking leve e eficiente  
+- **ImGui** — API Grafica
+- 
+As dependências ja estao incluidas.
+
+---
+
+## 🖥️ Requisitos
+
+- Windows 10 ou superior
+- **Visual Studio 2022**
+- MSVC Toolset v143
+- Compilação em **Release x64**
+
+---
+
+## 🚀 Build & Uso
+
+### 1. Clonar o repositório
+
+git clone https://github.com/seuusuario/fivem-offset-dumper.git
+
+### 2. Abrir no Visual Studio
+
+Abra o arquivo `.sln` utilizando o **Visual Studio 2022**.
+
+### 3. Compilar
+
+Selecione:
+
+Release | x64
+
+e compile o projeto.
+
+### 4. Renomear `adhesive.dll`
+
+Abrir o diretorio do FiveM e renomear a `adhesive.dll` para `adhesive.dll.bkp`
+
+### 5. Executar
+
+OffsetDumper.exe
+
+### 6. Resultado
+
+Os offsets serão gerados automaticamente em:
+
+offsets.txt
+
+---
+
+## 📄 Exemplo de saída
+
+World: 0x2476F50  
+ReplayInterface: 0x1F42028  
+Viewport: 0x1F9A3D0  
+LocalPlayer: 0x8  
+
+---
+
+## ⚠️ Aviso
+
+Este projeto é fornecido **apenas para fins educacionais e de pesquisa**.
+
+Os autores não se responsabilizam por qualquer uso indevido.
+
+
+## 👨‍💻 Autores
+
+**Pedro Guarconi**  
+**Gabriel Cancella**
