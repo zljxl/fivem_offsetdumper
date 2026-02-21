@@ -8,7 +8,7 @@ Developed by **Pedro Guarconi** and **Gabriel Cancella**.
 
 ## 📖 Overview
 
-FiveM Offset Dumper automates the process of retrieving offsets used by FiveM, eliminating the need for manual analysis after every update.
+Educational Memory Finder automates the process of retrieving offsets used by FiveM, eliminating the need for manual analysis after every update.
 
 The tool scans the running process and generates a clean, organized list of offsets ready to use.
 
@@ -16,7 +16,7 @@ The tool scans the running process and generates a clean, organized list of offs
 
 ## ✨ Features
 
-- Automatic offset dumping
+- Automatic offset finding
 - Compatible with recent FiveM updates
 - Clean and organized output structure
 - Fast and lightweight execution
@@ -118,7 +118,7 @@ This ensures correct offset mapping.
 Offsets will be generated automatically at:
 
 ```
-offsets.txt
+C://offs/VERSION.txt
 ```
 
 ---
