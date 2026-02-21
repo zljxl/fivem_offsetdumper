@@ -2,7 +2,7 @@
 
 Ferramenta para **extração automática de offsets atualizados do FiveM**.
 
-Desenvolvido por **Pedro Guarconi** e colaborador.
+Desenvolvido por **Pedro Guarconi** e **Gabriel Cancella**.
 
 ---
 
