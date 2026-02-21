@@ -1,108 +1,148 @@
 # 🎮 FiveM Offset Dumper
 
-Ferramenta para **extração automática de offsets atualizados do FiveM**.
+Tool for **automatic extraction of updated FiveM offsets**.
 
-Desenvolvido por **Pedro Guarconi** e **Gabriel Cancella**.
-
----
-
-## 📖 Visão geral
-
-O FiveM Offset Dumper automatiza a obtenção de offsets utilizados pelo FiveM, eliminando a necessidade de análise manual a cada atualização.
-
-A ferramenta analisa o processo em execução e gera uma lista organizada de offsets prontos para uso.
+Developed by **Pedro Guarconi** and **Gabriel Cancella**.
 
 ---
 
-## ✨ Recursos
+## 📖 Overview
 
-- Dump automático de offsets
-- Compatível com atualizações recentes do FiveM
-- Estrutura de saída limpa e organizada
-- Execução rápida e leve
-- Fácil integração com outros projetos
+FiveM Offset Dumper automates the process of retrieving offsets used by FiveM, eliminating the need for manual analysis after every update.
+
+The tool scans the running process and generates a clean, organized list of offsets ready to use.
 
 ---
 
-## 🧱 Tecnologias
+## ✨ Features
+
+- Automatic offset dumping
+- Compatible with recent FiveM updates
+- Clean and organized output structure
+- Fast and lightweight execution
+- Easy integration with other projects
+
+---
+
+## 🧱 Technologies
 
 - **C++**
 - **Windows API**
-- Técnicas de análise de memória
+- Memory analysis techniques
 
 ---
 
-## 📦 Dependências
+## 📦 Dependencies
 
-O projeto utiliza:
+This project uses:
 
-- **MinHook** — API hooking leve e eficiente  
-- **ImGui** — API Grafica
-- 
-As dependências ja estao incluidas.
+- **KieroHook** — lightweight API hooking library  
+- **ImGui** — graphical interface library  
+
+All dependencies are already included.
 
 ---
 
-## 🖥️ Requisitos
+## 🖥️ Requirements
 
-- Windows 10 ou superior
+- Windows 10 or newer
 - **Visual Studio 2022**
 - MSVC Toolset v143
-- Compilação em **Release x64**
+- Build target: **Release x64**
 
 ---
 
-## 🚀 Build & Uso
+## 🚀 Build Instructions
 
-### 1. Clonar o repositório
+### 1. Clone the repository
 
-git clone https://github.com/seuusuario/fivem-offset-dumper.git
+```bash
+git clone https://github.com/zljxl/Educational-Memory-Finder
+```
 
-### 2. Abrir no Visual Studio
+### 2. Open in Visual Studio
 
-Abra o arquivo `.sln` utilizando o **Visual Studio 2022**.
+Open the `.sln` file using **Visual Studio 2022**.
 
-### 3. Compilar
+### 3. Compile
 
-Selecione:
+Select:
 
+```
 Release | x64
+```
 
-e compile o projeto.
+Then build the solution.
 
-### 4. Renomear `adhesive.dll`
+---
 
-Abrir o diretorio do FiveM e renomear a `adhesive.dll` para `adhesive.dll.bkp`
+## ▶️ How to Use
 
-### 5. Executar
+### 1. Prepare FiveM
 
-OffsetDumper.exe
+Navigate to your FiveM directory and rename:
 
-### 6. Resultado
+```
+adhesive.dll → adhesive.dll.bkp
+```
 
-Os offsets serão gerados automaticamente em:
+---
 
+### 2. Start FiveM
+
+Launch FiveM and wait until it is fully loaded.
+
+---
+
+### 3. Inject the dumper
+
+Use a DLL injector such as **Extreme Injector** (or any trusted injector):
+
+- Run the injector as Administrator
+- Select the compiled dumper DLL
+- Inject into the **FiveM process**
+
+⚠️ Make sure to select the correct FiveM process.
+
+---
+
+### 4. Inform the FiveM version
+
+After injection, provide the FiveM build/version you are using when prompted.  
+This ensures correct offset mapping.
+
+---
+
+### 5. Output
+
+Offsets will be generated automatically at:
+
+```
 offsets.txt
+```
 
 ---
 
-## 📄 Exemplo de saída
+## 📄 Example Output
 
-World: 0x2476F50  
-ReplayInterface: 0x1F42028  
-Viewport: 0x1F9A3D0  
-LocalPlayer: 0x8  
+```
+World: 0x2476F50
+ReplayInterface: 0x1F42028
+Viewport: 0x1F9A3D0
+LocalPlayer: 0x8
+```
 
 ---
 
-## ⚠️ Aviso
+## ⚠️ Disclaimer
 
-Este projeto é fornecido **apenas para fins educacionais e de pesquisa**.
+This project is provided **for educational and research purposes only**.
 
-Os autores não se responsabilizam por qualquer uso indevido.
+The authors are not responsible for any misuse.
 
+---
 
-## 👨‍💻 Autores
+## 👨‍💻 Authors
 
 **Pedro Guarconi**  
 **Gabriel Cancella**
